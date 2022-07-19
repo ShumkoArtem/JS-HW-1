@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Домашняя работа №1</h1>
+    <div>
+        <h3>1. Запросите у пользователя число, возведите это число во 2-ю степень и выведите на экран.</h3>
+        <input type="text" id="num1"> ^2
+        <button onclick="click1()">Вычислить</button> =
+        <output id="sqrt"></output>
+    </div>
+    <div>
+        <h3>2. Зарплата работника составляет $250 + 10% от продаж. Запросите общую сумму продаж за месяц и посчитайте зарплату</h3>
+    </div>
+    <div>
+        <h3>3. (используйте условные операторы) Запросить у пользователя название планеты. Если пользователь ввел «Земля» или «земля», то вывести «Привет, землянин!», в остальных случаях вывести «Привет, инопланетянин!».</h3>
+        <p><input type="text" value="Введите название планеты" id="name_planet">
+            <button onclick="click3()">ввод</button></p>
+        <p><output id="output__greetings"></output></p>
+    </div>
+    <div>
+        <h3>4. (используйте циклы) Из-за утечки из бака охлаждения ежедневно вытекает 10% налитой воды. При объеме воды менее 10 литров возникает аварийная ситуация. Составьте программу, которая запрашивает у пользователя первоначальный объем воды и рассчитывает,
+            на сколько дней работы этого хватит.
+        </h3>
+        <p>
+            Введите первоначальный объем воды :
+            <input type="text" id="initial_volume">
+            <button onclick="click4()">ввод</button>
+            <p>
+                Данного объема воды хватит на <output id="amountOfDays">...</output> дней.
+            </p>
+        </p>
+    </div>
+    <div>
+        <h3>
+            5. Написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+        </h3>
+        <p>
+            <input type="text" id="first_number">
+            <input type="text" id="second_number">
+            <button id="button5">Рассчитать</button>
+        </p>
+        <p>
+            Меньшее число : <output id="min_number">...</output> .
+        </p>
+    </div>
+    <div>
+        <h3>
+            6. Написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. Какие числа выводить, определяется третьим параметром типа bool (true – четные, false – нечетные).
+        </h3>
+        <p>
+            Укажите диапазон чисел:
+            <input type="number" id="from">
+            <input type="number" id="to">
+            <button onclick="click_true()" id="id_true">true</button>
+            <button onclick="click_false()" id="id_false">false</button>
+        </p>
+        <p>
+            <output id="output__numbers"></output>
+        </p>
+    </div>
+
+    <script src="js30_06.js"></script>
+</body>
+
+</html>
